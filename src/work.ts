@@ -1,5 +1,5 @@
 // Using the *deprecated* createDecipher function
-import { createCipher, createDecipher } from 'crypto'
+import { createDecipher } from 'crypto'
 
 const key = Buffer.from('Random', 'utf8')
 const decipher = createDecipher('aes-128-ecb', key).setAutoPadding(false)
