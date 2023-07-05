@@ -1,0 +1,12 @@
+{
+  "name": "bun-crypto-issue",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start:work": "bun run src/work.ts",
+    "start:broke": "bun run src/broke.ts"
+  },
+  "devDependencies": {
+    "bun-types": "0.6.12"
+  }
+}
