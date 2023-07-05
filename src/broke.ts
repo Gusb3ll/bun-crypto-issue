@@ -1,9 +1,9 @@
 // Using the current createDecipheriv function
 import { createDecipheriv } from 'crypto'
 
-const K = Buffer.from('Random', 'utf8')
+const key = Buffer.from('Random', 'utf8')
 // Got error when the *iv* value is null
-const decipher = createDecipheriv('aes-128-ecb', K, null).setAutoPadding(false)
+const decipher = createDecipheriv('aes-128-ecb', key, null).setAutoPadding(false)
 
 const data = Buffer.from('randomstringrandomstring', 'utf-8')
 
